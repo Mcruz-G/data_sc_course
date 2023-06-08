@@ -6,8 +6,8 @@ import string
 from datetime import datetime
 
 def create_db_sqlite():
-    if not os.path.exists(os.curdir + '/Retail.db'):
-        conn = sqlite3.connect('Retail.db')
+    if not os.path.exists(os.curdir + 'databases/Retail.db'):
+        conn = sqlite3.connect('databases/Retail.db')
         c = conn.cursor()
 
         # Create customers table
